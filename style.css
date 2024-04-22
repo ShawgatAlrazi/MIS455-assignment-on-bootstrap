@@ -1,0 +1,318 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  .custom-navbar {
+    margin-bottom: 1px dotted orange;
+    background-image: linear-gradient(to right top, #ff7f00, #ff5500, #ff2b00, #ff0100, #d50000);
+}
+
+  
+  .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+  }
+  
+  .heading-logo {
+    width: 80px;
+    margin-left: 30px;
+  }
+  
+  .main-home {
+    background-color: whitesmoke;
+  }
+  
+  .home-picture {
+    background-image: cover;
+    width: 100px;
+  }
+  
+  /* #feature {
+    margin-top: 30px;
+    background-color: rgb(241, 239, 239);
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .cart-item img {
+    width: 300px;
+  } */
+
+  #feature {
+    margin-top: 30px;
+    background-color: rgb(241, 239, 239);
+    width: 80%; /* Reduced width from 100% to 80% */
+    margin-bottom: 30px;
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+  }
+  
+  .cart-item img {
+    width: 200px; /* Reduced width from 300px to 200px */
+  }
+  
+  /* Adjust the flex-basis for cart items */
+  .cart-item {
+    flex-basis: calc(50% - 20px); /* Adjusted for two items per row */
+  }
+  
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-basis: 100%; /* Full width for mobile */
+    }
+  }
+  
+  
+  .custom-cart {
+    background-color: #070505;
+    color: lime;
+  }
+  
+  /* More-Game Section Styles */
+  #more-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(to right top, #f8e0c4, #f9d6ab, #fad092, #faca79, #fbc460);
+    padding: 20px;
+    
+  }
+  
+  .game-warrior,
+  .latest-posts,
+  .top-comments {
+    background-color: #333;
+    color: #000000;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    flex-basis: calc(33.333% - 20px);
+  }
+  
+  .game-warrior img,
+  .latest-posts img,
+  .top-comments img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #more-game {
+      flex-direction: column;
+    }
+  
+    .game-warrior,
+    .latest-posts,
+    .top-comments {
+      flex-basis: 100%;
+    }
+  
+    .game-warrior img,
+    .latest-posts img,
+    .top-comments img {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }
+  
+  .game-warrior h3,
+  .latest-posts h5,
+  .top-comments h5 {
+    text-align: center;
+  }
+  
+  .latest-game-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .latest-game-container p {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .latest-game-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .latest-game-container p {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Additional Responsive Styles for .game-warrior */
+  @media (min-width: 768px) {
+    .game-warrior .gamin-zone {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .game-warrior .gamin-zone img {
+      max-width: 60%;
+    }
+  }
+  
+  /* Centering and resizing the image in the .game-warrior div */
+  .game-warrior .gamin-zone img {
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    width: 60%; /* Adjust the width to make the image larger */
+    max-width: 100%; /* Ensures the image is not larger than its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+  }
+  
+
+  /* Keyframes for slide-in animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the divs */
+  .game-warrior,
+  .latest-posts,
+  .top-comments {
+    animation: slideInFromLeft 2s ease-out 2s forwards;
+  }
+  
+
+  /* Add a black border to the bottom of each nav-item */
+.nav-item {
+    border-bottom: 1px solid black; /* Black border at the bottom */
+    margin-left: 10px; /* Gap on the left */
+    margin-right: 10px; /* Gap on the right */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  /* Remove the border for the last nav-item */
+  .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Change the background and text color on hover */
+  .nav-item:hover {
+    background-color: rgb(255, 255, 255); /* Background color on hover */
+    color: rgb(0, 0, 0); /* Text color on hover */
+  }
+  
+  /* Ensure the nav-link changes color appropriately on hover */
+  .navbar-nav .nav-link {
+    color: rgb(0, 0, 0); /* Default text color */
+    transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: white; /* Text color on hover */
+  }
+  
+/* contact form */
+
+
+
+#contacts {
+  background-image: linear-gradient(to right top, #f8e0c4, #f9d6ab, #fad092, #faca79, #fbc460);
+  color: #000000;
+  padding: 40px;
+  text-align: center;
+}
+
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Dark background for the form */
+    border-radius: 8px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    box-sizing: border-box; /* To include padding in the width */
+    background-color: rgb(43, 41, 41);
+  }
+  
+  .contact-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #504a5e; /* Button color from your gradient */
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #454355; /* Slightly darker on hover */
+  }
+  
+
+  /* Set a specific size for all cart-item images */
+.cart-item img {
+    width: 200px; /* Width of the image */
+    height: 200px; /* Height of the image */
+    object-fit: cover; /* This will cover the area without stretching the image */
+  }
+  
+  /* Additional styles to ensure the images are centered within their containers */
+  .cart-item .card-body {
+    text-align: center; /* Center the content inside the card body */
+  }
+  
+  .cart-item .card-body img {
+    margin-bottom: 10px; /* Add some space below the image */
+  }
+  
+
+  /* Add transition effect to 'Add to Cart' buttons */
+.btn-dark {
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-dark:hover {
+    transform: scale(1.30); /* Slightly increase the size of the button */
+  }
+  
+
+.footer{
+
+  background-image: linear-gradient(to right top, #f8e0c4, #f9d6ab, #fad092, #faca79, #fbc460);
+    height: 80px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Set a specific height for all images in the carousel */
+
+  
+  /* Ensure the carousel images are centered and cover their area */
+  /* .home-picture {
+    background-size: cover;
+    background-position: center;
+  } */
+  
